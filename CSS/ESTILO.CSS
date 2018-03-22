@@ -1,0 +1,35 @@
+head{
+	display:inline-table;
+	text-align:right;
+	margin-right:10px;
+	font-family:arial;
+	font-size:12px;
+	font-weight:bold;
+}
+div{
+	display:inline
+}
+.erro{
+	border-left:5px solid #f00;
+	padding-left:5px;
+	font-family:arial;
+	font-size: 12px;
+	font-weight: bold;
+	-webkit-animation: fadein 2s; /*Safari, Chrome and Opera >
+	12.1 */
+	-moz-animation: fadein 2s; /* FireFox < 16 */
+	-ms-animation: fadein 2s; /* Internet Explore */
+	-o-animation: fadein 2s; /* Opera < 12.1 */
+	animation: fadein 2s;
+}
+@keyframes fadein {
+	from{
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+}	
+
+

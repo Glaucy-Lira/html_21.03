@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js	"></script>
+	<script>
+		$(document).ready(function () {
+			$("#btnvalidar").click(function () {
+				if($("#txtnome").val() == ""){
+					$("#erronome").addClass("erro");
+					$("#erronome").html("Campo Obrigatório");
+					$("#txtnome").focus();
+				}
+				else{
+					$("#erronome").removeClass("erro");
+					$("#erronome").html("");
+				}
+				
+			});
+			$("#btnvalidar").click(function () {
+				if($("#txtemail").val() == ""){
+					$("#erroemail").addClass("erro");
+					$("#erroemail").html("Campo Obrigatório");
+					$("#txtemail").focus();
+				}
+				else{
+					$("#erroemail").removeClass("erro");
+					$("#erronemail").html("");
+				}
+		
+			});		
+		});
+		</script>
+	<body>
+
+		<form id="frmcad">
+			<fieldset>
+			<legend>Cadastro</legend>
+			<label for="txtnome">Nome:</label>
+			<input type="text" name="txtnome" id="txtnome" />
+			<div id="erronome"></div><br/>
+			<label for="txtemail">E-mail:</label>
+			<input type="email" name="txtemail" id="txtemail" /><br/><br/>
+			<label for="txtpass">Senha:</label>
+			<input type="password" name="txtpass" id="txtpass" /><br/>
+			<input type="button" value="Validar" id="btnvalidar" />
+		</fieldset>
+	</form>
+	</body>
+</html>
